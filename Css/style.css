@@ -86,6 +86,8 @@
 
 .container-visible{
    display: block;
+   width: 100vw;
+   height: 100vh;
 }
 
 /* Header */
@@ -96,19 +98,27 @@
 }
 
 
+.header-container {
+   max-width: 100vw;
+   max-height: 100vh;
+}
+
+
  .header-input {
     background-color: var(--purpleOne);
     box-shadow: 0px 0px 2px 2px  var(--purpleTwo);
     border-radius: 1rem;
     color: var(--grey);
+    display: block;
     font-size: 1.5rem;
     font-family: 'Roboto', sans-serif;
     padding: 0.5rem;
     height: 3.5rem;   
-    margin-top: -5rem;
-    margin-left: 30rem;
-   width: 50rem;
- }
+    margin-top: -4rem;
+    margin-left: 20rem;
+    width: 100%;
+    
+}
 
 
 .input-container {
@@ -121,21 +131,18 @@
 
 .icon-search {
     font-size: 38px !important;
-    position: relative;
-    margin-left: 30rem;
-    margin-top: 0.5rem;
+    position: absolute;
+    margin-left: 50rem;
+    margin-top: -3rem;
     color: var(--grey);
-   margin-top: -4.5rem;
-   margin-left: -3rem;
 }
 
  .icon-shopping {
-   position: relative;
+   position: absolute;
    font-size: 40px !important;
    color: var(--purpleOne);
-   margin-left: 70rem;
-   margin-top: -0rem;
-   margin-bottom: 20rem;
+   margin-left: 54rem;
+   margin-top: -3rem;
  }
 
 
@@ -155,9 +162,9 @@
 
 
 /* Aside */
-aside .card{
+.card-news{
    color: var(--white);
-   margin-left: 15rem;
+   margin-left: 7rem;
 }
 
  .news-title {
@@ -166,27 +173,33 @@ aside .card{
    position: relative;
    margin-top: 11rem;
    margin-bottom: 3rem;
-   margin-left: 15rem;
+   margin-left: 8rem;
 }
 
 
  /* Main */
 
-.card-block{
+.card-block  {
    /* display: block; */
    display: grid;
-   grid-template-columns: 1fr 1fr ;
-   grid-template-rows: 1fr;
+   grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
    gap: 10rem;
-   margin-bottom: 10rem;
+   margin-bottom: 10%;
+   margin-left: 100%;
+   margin-top: -46vh;
 }
 
 .card-none {
+   display: block;
    display: grid;
-   grid-template-columns: 1fr 1fr ;
-   grid-template-rows: 1fr;
+   grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
    gap: 10rem;
+   margin-bottom: 10%;
+   margin-left: 37vw;
+   margin-top: -80vh;
 }
+
+
 
 .card {
    border: none;
@@ -217,14 +230,21 @@ aside .card{
  }
 
 
+ .main-card-invisible,  .main-invisible, .container-responsive{
+   display: none;
+ }
+
+
+
+
 /* NAV */
 
 
 
 
 .nav-main {
-   margin-left: 48rem;
-   margin-top: 4rem;
+   margin-left: 30vw;
+   margin-top: 10vh;
    
 }
 
@@ -244,13 +264,13 @@ aside .card{
 footer {
    background-color: var(--purpleFive);
    width: 100%;
-   height: 10rem;
-
+   height: 20vh;
+   margin-top: 40vh;
 }
 
 .img-footer{
-  margin-left: 4rem;
-  margin-top: 1.5rem;
+  margin-left: 4%;
+  margin-top: 3%;
 
    width: 7rem;
    height: 7rem;
@@ -258,12 +278,12 @@ footer {
 
 
 .icon-footer {
-   margin-top: -5rem;
-   margin-left: 20rem;
+   margin-top: -4%;
+   margin-left: 40rem;
 }
 
 .icon-face {
-   margin-left: 80rem;
+   margin-left: 80%;
    margin-top: 2.5rem;
     width: 3rem;
     height: 3rem;
@@ -271,8 +291,8 @@ footer {
 }
 
 .icon-insta {
-   margin-top: 2.2rem;
-   margin-left: 6rem;
+   margin-top: 3vh;
+   margin-left: -6vw;
    width: 3rem;
    height: 3rem;
    
@@ -310,139 +330,259 @@ footer {
 
 /* Responisividade */
 
-@media (max-width: 576px) {
 
-   .container-responsive {
+@media (min-width: 1400px) and (max-width: 1880px) {
+
+
+   
+   
+   .card-block {
+      margin-top: -77vh;
+      margin-left: 30vw;
+   }
+
+   .main-res {
       display: block;
-      margin-bottom: 4rem;
-   }
-
-
-   .main-card-invisible {
-      margin-top: 10rem;
-      margin-left: 3rem;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 4rem;
-      
-   }
-
-
-
- 
-   .asside-visible {
-     display: none;
-   }
-
-   .Icon-home {
-      display: none;
-   }
-
-   .icon-search {
-     left: -16rem;
-     
+      margin-top: -75%;
+      margin-left: 15vw;
    }
 
    .nav-visible {
+      margin-left: 12vw;
+      margin-top: 4%;
+   }
+
+   footer {
+      margin-top: 35%;
+   }
+
+   .icon-face {
+      margin-left: 70%;
+      margin-right: 10%;
+      margin-top: -1%;
+   }
+
+   .icon-insta {
+      margin-top: -1%;
+   }
+
+}
+ 
+
+
+@media (min-width: 1200px) and  (max-width: 1440px)  {
+   
+   .container-responsive {
       display: none;
    }
 
-
-
-   .icon-shopping {
-      margin-left: 26rem;
-      margin-top: -4rem;
-      margin-bottom: 10rem;
-      position: relative;
-      top: -0.5rem;
-   }
-  
-   
-   .header-container{
-      margin-top: 1rem;
-      /* margin-bottom: 10rem; */
-   }
-
-
-   .input-container {
-      margin-left: 1rem;
-      margin-top: 2rem;
-      max-width: 1rem;
-
-   }
-
- footer {
-  height: 10rem;
- }
-
- .img-footer {
-   width: 6rem;
-   height: 6rem;
- }
-
- .icon-footer {
-   display: flex;
-   margin-left: -56rem;
-   margin-top: -6rem;
- }
-
- 
-}
- 
-@media (min-width: 576px) and (max-width: 768px) {
-
-   .header-container{
-      margin-top: 2rem;
-      
-      /* margin-bottom: 10rem; */
+   .Icon-home {
+      margin-top: 10vh;
    }
 
    .header-input {
-      max-width: 30rem;
-      margin-top: -5rem;
-      margin-left: 13rem;
+      width: 90%;
+      margin-left: 50%;
+   }
+
+   .input-container {
+      width: 100%;
+      margin-left: 15%;
+      margin-top: -5%;
+   }
+
+      .icon-search {
+         position: absolute;
+         margin-left: 48%;
+      }
+
+      .icon-shopping {
+         margin-top: -3rem;
+         margin-left: 42rem;
+         position: absolute;
+         
+      }
+
+      .asside-visible {
+         margin-left: -2rem;
+      } 
+
+
+      .card-none {
+         display: none;
+   
+      }
+      
+   
+
+      .card-block {
+         display: block;
+         margin-left: 50vw;
+         margin-top: -77vh;
+      }
+      
+      .card-one {
+         margin-bottom: 5vh;
+      }
+
+      .nav-visible {
+         margin-top: 5vh;
+         margin-left: 24vw;
+      }
+
+
+      footer {
+         margin-top: 50%;
+      }
+      
+
+      .icon-footer {
+         display: flex;
+      }
+
+
+      .icon-face {
+        
+         margin-left: 20vw;
+         margin-top: 1%;
+      }
+
+   
+      .icon-insta {
+         margin-top: 2%;
+         margin-left:  6vw;
+      }
+
+   
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px)  {
+
+   .container-responsive {
+      display: none;
+   }
+
+  
+
+   .Icon-home {
+      margin-left: 3%;
+   }
+
+   .header-input {
+      width: 40%;
+      height: 5%;
+      position: absolute;
+   }
+   
+ 
+   .icon-search {
+      margin-top: -7vh;
+     margin-left: 67vw;
+     
+   }
+
+   .icon-shopping {
+      position: relative;
+      left: -25vw;
+      top: -5vh;
+   }
+
+   .asside-visible {
+    display: block;
+   }
+
+
+ .card-none {
+   margin-top: -77vh;
+   margin-left: 50vw;
+   display: block;
+ }
+
+ .card-three {
+   margin-bottom: 10vh;
+ }
+
+ .card-block {
+   display: none;
+   
+ }
+
+
+  .nav-visible {
+   margin-top: 10vh;
+   margin-left: 20vw;
+   }
+
+
+   footer {
+      margin-top: 70vh;
+      max-width: 100%;
+   }
+
+   .icon-face {
+      margin-top: -3vh;
+      margin-left: 30vw;
+   }
+
+   .icon-insta {
+      margin-top: -3vh;
+      margin-left: -15vw;
+   }
+
+}
+
+@media (max-width: 991px) {
+
+   .header-container{
+      margin-top: 2vh;
+   }
+
+   .Icon-home {
+      margin-left: 4vw;
+   }
+
+   .header-input {
+      max-width: 40%;
+      margin-left: 25vw;
+      position: absolute;
    }
    
 
    .icon-search {
-      margin-left: 27rem;
-      margin-top: -4.5rem;
+      margin-left: 60vw;
+      margin-top: -6vh;
 
    }
 
    .icon-shopping {
       margin-top: -20rem;
-      margin-left: 40rem;
+      margin-left: 60vw;
       margin-bottom: 15rem;
       position: relative;
       top: -2rem;
    }
    
-   .icon-footer {
-      display: flex;
-      flex-direction: row;
-      margin-top: -8rem;
-      margin-left: -50rem;
-   }
-
-   .icon-face {
-      margin-right: 2rem;
-      width: 6rem;
-   }
-
+   
    .asside-visible {
-      margin-left: 2rem;
+      display: block;
+      margin-top: -30vh;
+      margin-left: -10vw;
+   }
+
+   .card-block {
+      margin-left: 60vw;
+      margin-top: -77vh;
    }
 
    .nav-visible{
-      margin-left: -20rem;
+      margin-left: 25vw;
       margin-bottom: 6rem;
    }
 
 
    .main-res {
-      display: grid;
-      gap: 4rem;
+    display: none;
    }
 
    .card-none {
@@ -453,163 +593,81 @@ footer {
       display: none;
    }
 
- 
+   footer {
+      width: 100%;
+      margin-top: 80vh;
+   }
+
+
+
+   .icon-face {
+      margin-top: -10vh;
+      margin-left: 4vw;
+   }
+
+   .icon-insta {
+      margin-top: -10vh;
+      margin-left: 4vw;
+   }
   
 }
 
-@media (min-width: 768px) and (max-width: 991px)  {
-
-   .container-responsive {
-      display: none;
-   }
-
-   .header-container{
-      margin-top: 2rem;
-      /* margin-bottom: 10rem; */
-   }
-
-   .Icon-home {
-      margin-left: 2rem;
-   }
-
-   .header-input {
-      max-width: 30rem;
-      margin-top: -5rem;
-      margin-left: 10rem;
-   }
-   
-   .input-container {
-      width: 34rem;
-   }
-
- 
-   .icon-search {
-      margin-left: 31rem;
-      margin-top: -4.5rem;
+@media (max-width: 767px)  {
+   body {
+      overflow-x: hidden;
    }
 
    .icon-shopping {
-      margin-top: -6rem;
-      margin-left: 30rem;
-      position: relative;
-      top: -2rem;
+      margin-left: 80vw;
+   }
+
+   .icon-search {
+      margin-left: 58vw;
    }
 
    .asside-visible {
-      margin-left: 4rem;
+      display: block;
    }
-
-  .main-res {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 4rem;
-      margin-top: 16rem;
-      margin-left: 2rem;
-
-   }
-
-  .card-none {
+   
+   .card-news {
       display: none;
    }
 
-  .nav-visible {
-    margin-left: -14rem;
-    margin-bottom: 3rem;
+   .news-title {
+      display: none;
    }
 
+   .card-block {
+      margin-top: 30vh;
+      margin-left: 30vw;
+   }
+   
+   .nav-visible {
+      margin-left: 3vw;
+   }
 
    footer {
       width: 100%;
    }
 
    .icon-face {
-      margin-top: -10rem;
-      margin-left: 30rem;
+      margin-left: -20vw;
    }
 
    .icon-insta {
-      margin-top: -10rem;
-      margin-left: 10rem;
+      margin-left: -20vw;
    }
-
-}
- 
-@media (min-width: 992px) and (max-width: 1200px)  {
-   
-   .container-responsive {
-      display: none;
-   }
-
-   .Icon-home {
-      margin-top: 4rem;
-   }
-
-   .input-container {
-      width: 30rem;
-      margin-left: 15rem;
-      margin-top: -5rem;
-   }
-
-      .icon-search {
-         position: absolute;
-         margin-left: 26rem;
-      }
-
-      .icon-shopping {
-         margin-top: -12rem;
-         margin-left: 45rem;
-         position: relative;
-         
-      }
-
-      .asside-visible {
-         margin-left: 5rem;
-      } 
-
-      .main-res {
-         display: grid;
-         margin-top: 18rem;
-         gap: 4rem;
-      }
-
-      .card-none {
-         display: none;
-      }
-
-      .icon-footer {
-         display: flex;
-      }
-
-
-      .icon-face {
-        
-         margin-left: 55rem;
-         margin-top: -8rem;
-      }
-
-   
-      .icon-insta {
-         margin-top: -7.8rem;
-         margin-left: 10rem;
-      }
-
-      .nav-main {
-         margin-bottom: 5rem;
-         margin-left: 40rem;
-      }
 }
 
- 
-@media (min-width: 1200px) {
-   .container-responsive {
-      display: none;
-   }
 
-   
+@media (max-width: 573px) {
+   footer {
+      width: 100%;
+   }
 }
 
 /* tamanos de telas responsivas 
 Pequena (menor que 640 px)
 Média (641 px a 1.007 px)
 Grande (1.008 px e maior) */
-/* https://www.youtube.com/watch?v=Jyvffr3aCp0  30:18*/
+/* F 30:18*/

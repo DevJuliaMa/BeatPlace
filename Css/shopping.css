@@ -1,0 +1,315 @@
+:root {
+
+    /* purple */
+    --purpleOne: #E5CFF7;
+    --purpleTwo: #9D76C1;
+    --purpleThree: #8A2BE2;
+    --purpleFour: #4A006E;
+    --purpleFive: #3A2570;
+ 
+    --purpleBackground: #726697;
+    --purpleBackgroundTwo: #563D7C;
+ 
+ 
+    /* emphasis */
+    --purpleDes: #5B0888;
+    --purpleDesTwo: #713ABE;
+ 
+    --greenButton: #009929;
+    --redButton: #BA3737;
+    --yellowButton: #F5F062;
+    --yellowHoverButtontxt: #612E2E;
+ 
+    --pink: #FF007F;
+    --lightPink: #FFC0CB;
+    --yellow: #FFFF00;
+ 
+    --black: #000;
+    --white: #fff;
+    --grey: #2D2D2D;
+ 
+ 
+   --titleCompra: #EDE4FF;
+ 
+ 
+  
+    /* hover and focus */
+    --purpleHoverButton: #8E71B8;
+    --purpleHoverText: #563D7C;
+ 
+    --greeHoverButton: #81EF9F;
+    --greeHoverTxt: #352F44;
+ 
+    --pinkHoverButton: #FE83C0;
+    --pinkHoverTxt: #352F44;
+ 
+    --orangeHoverButton: #F88282;
+    --orangeHoverTxt: #563D7C;
+ 
+    --greeBackHoverButton: #7A761A;
+    --greenBackHoverTxt: #7A761A;
+ 
+    --arrowHover: #FF007F;
+ 
+    --inputFocus: #FFC0CB;
+    --inputSearchFocus: #726697;
+ 
+    --shopHover: #FF007F;
+ 
+    --logoHover: #E5CFF7;
+    --logoHoverTxt: #726697;
+ 
+}
+  
+ 
+  
+  
+* {
+    box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+     border: 0;
+     font: inherit;
+     vertical-align: baseline;
+     list-style: none;
+}
+
+body {
+    background-color: var(--purpleThree);
+}
+
+.decoration {
+    width: 100%;
+    height: 2rem;
+    background-color: var(--inputFocus);
+
+}
+
+.title {
+    text-align: center;
+    margin-top: 6rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 4.5rem;
+    font-weight: bold;
+    color: var(--titleCompra);
+}
+
+.container-img {
+    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;
+    overflow: hidden;
+    position: relative;
+    margin-top: 1rem;
+    display: flex;
+    margin-left: 12rem;
+
+}
+
+main {
+    display: flex;
+}
+
+.email-input {
+    width: 50rem;
+    background-color: var(--titleCompra);
+    margin-top: 2.6rem;
+    margin-left: 6rem;
+}
+
+.email-label {
+    margin-left: 6rem; 
+}
+
+.group-flex {
+    display: flex;
+}
+
+.cep-input {
+    width: 24rem;
+    margin-left: 6rem;
+    margin-top: 2rem;
+}
+
+.cep-label {
+    margin-left: 6rem;
+    margin-top: 2rem;
+}
+
+.date-input {
+    width: 23rem;
+    margin-left: 3rem;
+    margin-top: 2rem;
+}
+
+.price {
+    width: 24rem;
+    height: 3.12rem;
+    background-color: var(--titleCompra);
+    border-radius: 8px;
+    margin-top: 2rem;
+    margin-left: 6rem;
+}
+
+.price-title {
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
+    margin-left: 1.25rem;
+}
+
+.btn {
+    width: 13.1rem;
+    height: 3.3rem;
+    position: relative;
+    margin-top: -6.5rem;
+    margin-left: 12rem;
+    border-radius: 1rem;
+    font-family: "Roboto", sans-serif;
+    color: var(--black);
+    font-size: 1.5rem;
+}
+
+
+
+footer {
+    background-color: var(--purpleFive);
+    width: 100%;
+    margin-top: 15rem;
+    height: 10rem;
+ 
+ }
+ 
+ .img-footer{
+   margin-left: 4rem;
+   margin-top: 1.5rem;
+ 
+    width: 7rem;
+    height: 7rem;
+ }
+ 
+ 
+ .icon-footer {
+    margin-top: -5rem;
+    margin-left: 20rem;
+ }
+ 
+ .icon-face {
+    margin-left: 80rem;
+    margin-top: 2.5rem;
+     width: 3rem;
+     height: 3rem;
+     
+ }
+ 
+ .icon-insta {
+    margin-top: 2.2rem;
+    margin-left: 6rem;
+    width: 3rem;
+    height: 3rem;
+ }
+
+ @media (min-width: 576px) and (max-width: 768px) {
+    .title {
+        font-size: 1.75rem;
+    }
+
+    .container-form {
+        margin-left: 50rem;
+    }
+
+    .email-input {
+        width: 27rem;
+    }
+
+    .cep-input {
+        width: 12rem;
+    }
+
+    .date-input {
+        width: 12rem;
+    }
+
+    .icon-face {
+        margin-left: 12rem;
+        margin-top: 1rem;
+    }
+
+    .icon-insta {
+        margin-top: -4.5rem;
+    }
+ }
+
+ @media (min-width: 768px) and (max-width: 991px) {
+    .title {
+        font-size: 4rem;
+    }
+
+    .container-form {
+        margin-left: 5rem;
+    }
+
+    .email-input {
+        width: 27rem;
+    }
+
+    .cep-input {
+        width: 12rem;
+    }
+
+    .date-input {
+        width: 12rem;
+    }
+
+ 
+ }
+
+ @media (min-width: 992px) and (max-width: 1200px) {
+    .icon-face {
+        margin-left: 30rem;
+        justify-content: center;
+    }
+
+    .icon-insta {
+        margin-left: 10rem;
+        margin-right: 16rem;
+        justify-content: center;  
+    }
+ }
+
+ @media (min-width: 1200px) {
+    .container-form {
+        margin-left: -15rem;
+    }
+
+    .container-img {
+        margin-left: 10rem;
+        margin-top: 10rem;
+    }
+    .container-form {
+        margin-left: 5rem;
+    }
+
+    .email-input {
+        width: 27rem;
+    }
+
+    .cep-input {
+        width: 12rem;
+    }
+
+    .date-input {
+        width: 12rem;
+    }
+
+    .icon-face {
+        margin-left:90rem;
+        justify-content: center;
+    }
+
+    .icon-insta {
+        margin-left: 90rem;
+        margin-top: -7.5rem;
+        justify-content: center;  
+    }
+
+ }
