@@ -76,7 +76,6 @@
 
   body {
     background-color: var(--purpleThree);
-    text-decoration: none;
   }
 
   .decoration {
@@ -95,61 +94,19 @@
 
 .content{
     width: 100%;
-    height: 100vh;
+    height: 60vh;
     background-color: var(--purpleBackgroundTwo);
     align-items: center;
-    margin-left: 10vw;
+    margin-left: 40vw;
     margin-top: 10vh;
     border-radius: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
-.content-main {
-    display: flex;
 
-}
-
-.content-main h1 {
-    font-family: "Zilla Slab", sans-serif;
-    font-size: 10rem;
-    color: var(--white);
-    margin-top: 6vh;
-    margin-left: 25vw;
-}
-
-.option {
-    font-size: 5rem;
-    margin-top: 15vh;
-    margin-left: 6vw;
-}
-
-.master {
-    border-radius: 50%;
-    width: 25rem;
-    height: 25rem;
-    overflow: hidden;
-    margin-top: -7vh;
-    margin-left: 2vw;
-}
-
-.img-master {
-    width: 100%;
-    height: 100%;
-}
-
-
-.button-shopping {
-    margin-top: 15vh;
-    margin-left: 15vw; 
-    width: 200rem;
-    height: 10rem;
-    flex-basis: 100%;
-    background-color: var(--arrowHover);
-    border-radius: 1rem;
-    font-family: "Roboto", sans-serif;
-    color: var(--white);
-    font-size: 5rem;
-    font-weight: bold;
+.name-input {
+    width: 40vw;
+    height: 80vh;
 }
 
 footer {

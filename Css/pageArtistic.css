@@ -292,12 +292,55 @@
   }
  }
 
- @media (min-width: 1200px) and (max-width: 1440px) {
+
+ @media (min-width: 1400px) and (max-width: 1880px) {
+  .play-button {
+    margin-left: 35vw;
+  }
 
   .container-price {
-    margin-top: 15vh;
-    margin-left: 45vw;
+    margin-top: 5vh;
+    margin-left: 35vw;
   }
+
+  .tag-new {
+    margin-top: 10vh;
+    margin-left: 33vw;
+  }
+
+  .icon-face {
+    margin-left: 65vw;
+  }
+  
+  footer {
+   height: 100%;
+  }
+
+  .icon-insta {
+    margin-top: -10vh;
+  }
+ }
+
+
+
+ @media (min-width: 1200px) and (max-width: 1399px) {
+
+  .artist-description {
+    font-size: 1rem;
+    margin-left: 2vw;
+  }
+
+
+  .play-button {
+    margin-left: 95vw;
+  }
+
+  .tag-new {
+    margin-left: -90vw;
+  }
+
+
+ 
 
 
   .icon-face {
@@ -314,7 +357,7 @@
   }
  }
 
- @media (min-width: 992px) and (max-width: 1200px) {
+ @media (min-width: 992px) and (max-width: 1999px) {
 
   .name {
     font-size: 4rem;
@@ -346,16 +389,22 @@
     margin-top: 15vh;
     margin-left: 50vw;
   }
+
+
   .icon-insta {
     margin-left: 50vw;
-    margin-top: -8vh;
+    margin-top: -10vh;
   }
 
   .icon-face {
     margin-left: 60vw;
     margin-top: 2vh;
   }
+
+ 
  }
+
+
  @media (max-width: 991px) {
     .icon-header {
         font-size: 2rem;

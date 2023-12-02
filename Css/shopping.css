@@ -208,75 +208,26 @@ footer {
     height: 3rem;
  }
 
- @media (min-width: 576px) and (max-width: 768px) {
-    .title {
-        font-size: 1.75rem;
-    }
 
-    .container-form {
-        margin-left: 50rem;
-    }
 
-    .email-input {
-        width: 27rem;
-    }
+.icon-insta {
+    margin-top: -80vh;
+}
 
-    .cep-input {
-        width: 12rem;
-    }
 
-    .date-input {
-        width: 12rem;
-    }
-
-    .icon-face {
-        margin-left: 12rem;
-        margin-top: 1rem;
-    }
-
+@media (min-width: 1500px) and (max-width: 1700px) {
     .icon-insta {
-        margin-top: -4.5rem;
+        margin-top: -10vh;
     }
- }
-
- @media (min-width: 768px) and (max-width: 991px) {
-    .title {
-        font-size: 4rem;
-    }
-
-    .container-form {
-        margin-left: 5rem;
-    }
-
-    .email-input {
-        width: 27rem;
-    }
-
-    .cep-input {
-        width: 12rem;
-    }
-
-    .date-input {
-        width: 12rem;
-    }
-
+}
  
- }
+@media (min-width: 1400px) and (max-width: 1650px) {
+    
+    
+}
 
- @media (min-width: 992px) and (max-width: 1200px) {
-    .icon-face {
-        margin-left: 30rem;
-        justify-content: center;
-    }
 
-    .icon-insta {
-        margin-left: 10rem;
-        margin-right: 16rem;
-        justify-content: center;  
-    }
- }
-
- @media (min-width: 1200px) {
+@media (min-width: 1200px) {
     .container-form {
         margin-left: -15rem;
     }
@@ -313,3 +264,103 @@ footer {
     }
 
  }
+
+ @media (min-width: 992px) and (max-width: 1199px) {
+    .icon-face {
+        margin-left: 30rem;
+        justify-content: center;
+    }
+
+    .icon-insta {
+        margin-left: 10rem;
+        margin-right: 16rem;
+        justify-content: center;  
+    }
+ }
+
+
+ @media (min-width: 768px) and (max-width: 991px) {
+    .title {
+        font-size: 4rem;
+    }
+
+    .container-form {
+        margin-left: 5rem;
+    }
+
+    .email-input {
+        width: 27rem;
+    }
+
+    .cep-input {
+        width: 12rem;
+    }
+
+    .date-input {
+        width: 12rem;
+    }
+
+ 
+ } 
+ 
+ @media (min-width: 768px) and (max-width: 991px) {
+    .title {
+        font-size: 4rem;
+    }
+
+    .container-form {
+        margin-left: 5rem;
+    }
+
+    .email-input {
+        width: 27rem;
+    }
+
+    .cep-input {
+        width: 12rem;
+    }
+
+    .date-input {
+        width: 12rem;
+    }
+
+ 
+ }
+
+
+ @media (min-width: 576px) and (max-width: 768px) {
+    .title {
+        font-size: 1.75rem;
+    }
+
+    .container-form {
+        margin-left: 50rem;
+    }
+
+    .email-input {
+        width: 27rem;
+    }
+
+    .cep-input {
+        width: 12rem;
+    }
+
+    .date-input {
+        width: 12rem;
+    }
+
+    .icon-face {
+        margin-left: 12rem;
+        margin-top: 1rem;
+    }
+
+    .icon-insta {
+        margin-top: -4.5rem;
+    }
+ }
+
+
+
+
+
+ 

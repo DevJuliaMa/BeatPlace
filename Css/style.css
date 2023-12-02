@@ -349,11 +349,12 @@ footer {
 
    .nav-visible {
       margin-left: 12vw;
-      margin-top: 4%;
+      margin-top: 5vh;
    }
 
    footer {
-      margin-top: 35%;
+      width: 100%;
+      margin-top: 80vh;
    }
 
    .icon-face {
@@ -367,10 +368,11 @@ footer {
    }
 
 }
- 
 
 
-@media (min-width: 1200px) and  (max-width: 1440px)  {
+
+
+@media (min-width: 1200px) and  (max-width: 1399px)  {
    
    .container-responsive {
       display: none;
